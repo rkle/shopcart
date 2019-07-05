@@ -1,0 +1,52 @@
+body{
+	margin:0;
+	font-family:sans-serif;
+}
+
+header h1{
+	float:left;
+}
+header img{
+	float:right;
+}
+header{
+	padding:20px 40px;
+}
+header:after{
+	display:block;
+	content:'';
+	clear:both;
+}
+
+ul{
+	list-style: none;
+	text-align:center;
+}
+li{
+	width:33.3333%;
+	float:left;
+	margin-bottom:20px;
+}
+
+button{
+	padding:10px 5px;
+	border:0;
+	border-radius:5px;
+	color: white;
+	background-color: #333;
+}
+
+.zoom{
+	position: absolute;
+	top:40px;
+	left:50%;
+	width:60px;
+	opacity: 0;
+	animation: zoom 1s ease;
+}
+
+@keyframes zoom{
+	0%{opacity: 0;}
+	50%{opacity: 1}
+	100%{opacity: 0; left:92%;}
+}
